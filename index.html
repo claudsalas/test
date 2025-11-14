@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Executive Taxi Driver Services</title>
+    <title data-i18n="page.title">Serviço de Motorista Executivo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,15 +16,47 @@
     <header class="top-bar">
       <div class="container">
         <div class="brand">
-          <span class="brand__logo" aria-hidden="true">🚖</span>
+          <span class="brand__logo">
+            <img
+              src="assets/logo-tw.jpg"
+              alt="Logotipo TW Wagner Transporte Executivo"
+              loading="lazy"
+            />
+          </span>
           <div class="brand__text">
-            <span class="brand__title">Executive Taxi Driver</span>
-            <span class="brand__subtitle">Premium city & airport rides</span>
+            <span class="brand__title" data-i18n="brand.title">Wagner Transporte Executivo</span>
+            <span class="brand__subtitle" data-i18n="brand.subtitle">
+              Conforto, segurança e pontualidade premium
+            </span>
           </div>
         </div>
-        <button class="btn btn--primary cta-whatsapp" type="button">
-          Book a Ride
-        </button>
+        <div class="top-bar__actions">
+          <div
+            class="language-toggle"
+            role="group"
+            data-i18n-attr="aria-label:language.groupLabel"
+            aria-label="Selecionar idioma"
+          >
+            <span class="sr-only" data-i18n="language.groupLabel">Selecionar idioma</span>
+            <button
+              class="language-toggle__button is-active"
+              type="button"
+              data-lang="pt-br"
+              aria-pressed="true"
+            >
+              <span aria-hidden="true" class="language-toggle__flag">🇧🇷</span>
+              <span class="language-toggle__label">Português</span>
+            </button>
+            <button class="language-toggle__button" type="button" data-lang="en" aria-pressed="false">
+              <span aria-hidden="true" class="language-toggle__flag">🇺🇸</span>
+              <span class="language-toggle__label">English</span>
+            </button>
+            <button class="language-toggle__button" type="button" data-lang="es" aria-pressed="false">
+              <span aria-hidden="true" class="language-toggle__flag">🇲🇽</span>
+              <span class="language-toggle__label">Español</span>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -32,38 +64,83 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="container hero__content">
           <div class="hero__text">
-            <h1 id="hero-title">Your personal chauffeur on demand</h1>
-            <p>
-              Enjoy punctual, comfortable and discreet transfers with a dedicated
-              executive driver. Perfect for airport pick-ups, corporate travel and
-              VIP guests.
+            <span class="hero__badge" data-i18n="hero.badge">Base em São Paulo · Transfers para o litoral</span>
+            <h1 id="hero-title" data-i18n="hero.title">
+              Experiência executiva sob medida em cada viagem
+            </h1>
+            <p data-i18n="hero.description">
+              Traslados premium em Toyota Corolla Cross preto com motorista bilíngue,
+              discreto e pontual. Perfeito para aeroportos, litoral paulista e agendas
+              corporativas.
             </p>
+            <ul class="hero__benefits">
+              <li>
+                <span class="hero__benefit-icon" aria-hidden="true">🛬</span>
+                <span class="hero__benefit-text" data-i18n="hero.benefitAirport">
+                  Recepção exclusiva em aeroportos e hotéis de luxo
+                </span>
+              </li>
+              <li>
+                <span class="hero__benefit-icon" aria-hidden="true">💼</span>
+                <span class="hero__benefit-text" data-i18n="hero.benefitCorporate">
+                  Motorista bilíngue, discreto e com apresentação impecável
+                </span>
+              </li>
+              <li>
+                <span class="hero__benefit-icon" aria-hidden="true">⭐</span>
+                <span class="hero__benefit-text" data-i18n="hero.benefitVip">
+                  SUV Corolla Cross com conforto superior e comodidades a bordo
+                </span>
+              </li>
+            </ul>
             <div class="hero__actions">
-              <button class="btn btn--primary cta-whatsapp" type="button">
-                Reserve via WhatsApp
+              <button
+                class="btn btn--primary btn--whatsapp hero__cta-primary cta-whatsapp"
+                type="button"
+                data-message-key="whatsapp.general"
+              >
+                <span class="btn__icon" aria-hidden="true">💬</span>
+                <span class="btn__label" data-i18n="hero.ctaPrimary">Falar com Wagner agora</span>
               </button>
-              <a class="btn btn--ghost" href="#services">Explore services</a>
+              <a class="btn btn--ghost" href="#services" data-i18n="hero.ctaSecondary">
+                Conhecer serviços
+              </a>
             </div>
-            <dl class="hero__stats" aria-label="Service highlights">
+            <p class="hero__cta-note">
+              <span class="hero__cta-note-dot" aria-hidden="true"></span>
+              <span data-i18n="hero.ctaNote">Atendimento direto com Wagner via WhatsApp</span>
+            </p>
+            <dl
+              class="hero__stats"
+              aria-label="Destaques do serviço"
+              data-i18n-attr="aria-label:hero.statsAriaLabel"
+            >
               <div>
                 <dt>10+</dt>
-                <dd>Years of professional driving</dd>
+                <dd data-i18n="hero.statsYearsLabel">Anos conduzindo clientes premium</dd>
               </div>
               <div>
                 <dt>24/7</dt>
-                <dd>Availability for scheduled rides</dd>
+                <dd data-i18n="hero.statsAvailabilityLabel">
+                  Disponibilidade para transfers agendados 24/7
+                </dd>
               </div>
               <div>
                 <dt>5★</dt>
-                <dd>Top-rated by executive clients</dd>
+                <dd data-i18n="hero.statsRatingLabel">Avaliado com excelência por executivos e famílias</dd>
               </div>
             </dl>
           </div>
-          <figure class="hero__image" aria-label="Luxury vehicle placeholder">
+          <figure
+            class="hero__image"
+            data-i18n-attr="aria-label:hero.imageLabel"
+            aria-label="Imagem ilustrativa de veículo de luxo"
+          >
             <img
-              src="https://via.placeholder.com/600x700.png?text=Luxury+Ride"
-              alt="Executive vehicle exterior"
+              src="assets/executive-sunset.jpg"
+              alt="Toyota Corolla Cross preto em estrada ao entardecer"
               loading="lazy"
+              data-i18n-attr="alt:hero.imageAlt"
             />
           </figure>
         </div>
@@ -72,158 +149,183 @@
       <section class="section" id="services" aria-labelledby="services-title">
         <div class="container">
           <header class="section__header">
-            <h2 id="services-title">Tailored services for discerning passengers</h2>
-            <p>
-              From airport transfers to corporate roadshows, every journey is
-              carefully planned for comfort, discretion and punctuality.
+            <h2 id="services-title" data-i18n="services.title">
+              Serviços sob medida para passageiros exigentes
+            </h2>
+            <p data-i18n="services.subtitle">
+              De transfers aeroportuários a roadshows corporativos, cada trajeto é
+              planejado com conforto, discrição e pontualidade.
             </p>
           </header>
           <div class="grid grid--three">
             <article class="card">
               <img
-                src="https://via.placeholder.com/420x260.png?text=Airport+Transfer"
-                alt="Airport transfer"
+                src="assets/executive-ride-town.jpg"
+                alt="Toyota Corolla Cross preto estacionado próximo a destino premium"
                 loading="lazy"
+                data-i18n-attr="alt:services.airportAlt"
               />
-              <h3>Airport Meet &amp; Greet</h3>
-              <p>
-                Flight tracking, luggage assistance and warm welcome signage to
-                impress your guests.
+              <h3 data-i18n="services.airportTitle">Transfers aeroportuários</h3>
+              <p data-i18n="services.airportDescription">
+                Monitoramento de voos, recepção com placa e assistência com bagagens nos
+                principais aeroportos de São Paulo.
               </p>
             </article>
             <article class="card">
               <img
-                src="https://via.placeholder.com/420x260.png?text=Corporate+Travel"
-                alt="Corporate travel"
+                src="assets/executive-rio.jpg"
+                alt="Toyota Corolla Cross preto com vista para o Cristo Redentor"
                 loading="lazy"
+                data-i18n-attr="alt:services.corporateAlt"
               />
-              <h3>Corporate Travel</h3>
-              <p>
-                Seamless transfers between meetings, ensuring punctuality and a
-                calm space to prepare on the move.
+              <h3 data-i18n="services.corporateTitle">Chofer para compromissos executivos</h3>
+              <p data-i18n="services.corporateDescription">
+                Discrição absoluta entre reuniões, com tempo para revisar pautas e
+                apoio para convidados internacionais.
               </p>
             </article>
             <article class="card">
               <img
-                src="https://via.placeholder.com/420x260.png?text=VIP+Events"
-                alt="VIP events"
+                src="assets/executive-sunset.jpg"
+                alt="Toyota Corolla Cross preto ao entardecer"
                 loading="lazy"
+                data-i18n-attr="alt:services.eventsAlt"
               />
-              <h3>VIP Events</h3>
-              <p>
-                Elegant arrivals and departures for galas, red-carpet events and
-                special celebrations.
+              <h3 data-i18n="services.eventsTitle">Viagens para litoral e eventos</h3>
+              <p data-i18n="services.eventsDescription">
+                Transfers sob medida para litoral norte, costa verde, resorts e eventos
+                sociais com chegada impecável.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--accent" aria-labelledby="promise-title">
-        <div class="container">
-          <div class="section__header">
-            <h2 id="promise-title">Why executives choose this service</h2>
-            <p>
-              Every ride is delivered with meticulous attention to detail and a
-              commitment to your comfort and safety.
-            </p>
-          </div>
-          <div class="grid grid--two">
-            <article class="feature">
-              <h3>Luxury fleet</h3>
-              <p>
-                Late-model sedans and SUVs with premium interiors, bottled water,
-                Wi-Fi and device charging.
-              </p>
-            </article>
-            <article class="feature">
-              <h3>Professional driver</h3>
-              <p>
-                Fully licensed, multilingual and well-presented driver with
-                extensive knowledge of city routes.
-              </p>
-            </article>
-            <article class="feature">
-              <h3>Seamless coordination</h3>
-              <p>
-                Real-time updates, itinerary management and flexible scheduling for
-                changing plans.
-              </p>
-            </article>
-            <article class="feature">
-              <h3>Safety first</h3>
-              <p>
-                Rigorous sanitization, discreet service and adherence to
-                corporate travel policies.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="fleet" aria-labelledby="fleet-title">
+      <section class="section section--muted" aria-labelledby="promise-title">
         <div class="container">
           <header class="section__header">
-            <h2 id="fleet-title">Fleet ready for any occasion</h2>
-            <p>Choose the vehicle that matches the tone of your engagement.</p>
+            <h2 id="promise-title" data-i18n="promise.title">
+              Por que executivos escolhem este serviço
+            </h2>
+            <p data-i18n="promise.subtitle">
+              Cada viagem é entregue com atenção aos detalhes e compromisso com seu
+              conforto e segurança.
+            </p>
+          </header>
+          <div class="grid grid--four">
+            <article class="feature-card">
+              <h3 data-i18n="promise.luxuryTitle">Frota de luxo</h3>
+              <p data-i18n="promise.luxuryDescription">
+                SUV Corolla Cross preto com interiores premium, água, Wi-Fi e
+                carregadores.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="promise.driverTitle">Motorista profissional</h3>
+              <p data-i18n="promise.driverDescription">
+                Motorista licenciado, bilíngue e bem-apresentado, com profundo
+                conhecimento de São Paulo e litoral.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="promise.coordinationTitle">Coordenação impecável</h3>
+              <p data-i18n="promise.coordinationDescription">
+                Atualizações em tempo real, gestão de itinerários e flexibilidade para
+                mudanças de agenda.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="promise.safetyTitle">Segurança em primeiro lugar</h3>
+              <p data-i18n="promise.safetyDescription">
+                Higienização rigorosa, condução defensiva e seguro completo para
+                passageiros.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="fleet-title">
+        <div class="container">
+          <header class="section__header">
+            <h2 id="fleet-title" data-i18n="fleet.title">Detalhes do veículo executivo</h2>
+            <p data-i18n="fleet.subtitle">
+              Conheça o SUV Corolla Cross preto disponível para a sua próxima viagem.
+            </p>
           </header>
           <div class="grid grid--three">
             <article class="card card--vertical">
               <img
-                src="https://via.placeholder.com/420x320.png?text=Executive+Sedan"
-                alt="Executive sedan"
+                src="assets/executive-rio.jpg"
+                alt="Toyota Corolla Cross preto com vista panorâmica do Rio de Janeiro"
                 loading="lazy"
+                data-i18n-attr="alt:fleet.suvAlt"
               />
-              <h3>Executive Sedan</h3>
-              <p>Ideal for individual executives seeking a quiet, productive ride.</p>
+              <h3 data-i18n="fleet.suvTitle">SUV Corolla Cross Black</h3>
+              <p data-i18n="fleet.suvDescription">
+                Amplo espaço, ar-condicionado dual zone e condução suave para chegar
+                descansado ao destino.
+              </p>
             </article>
             <article class="card card--vertical">
               <img
-                src="https://via.placeholder.com/420x320.png?text=Luxury+SUV"
-                alt="Luxury SUV"
+                src="assets/executive-ride-town.jpg"
+                alt="Detalhe frontal do Toyota Corolla Cross preto"
                 loading="lazy"
+                data-i18n-attr="alt:fleet.detailAlt"
               />
-              <h3>Luxury SUV</h3>
-              <p>Spacious comfort for teams or guests travelling with luggage.</p>
+              <h3 data-i18n="fleet.detailTitle">Presença marcante</h3>
+              <p data-i18n="fleet.detailDescription">
+                Visual sofisticado, iluminação em LED e acabamento premium que reforçam
+                sua imagem.
+              </p>
             </article>
             <article class="card card--vertical">
               <img
-                src="https://via.placeholder.com/420x320.png?text=Business+Van"
-                alt="Business van"
+                src="assets/executive-sunset.jpg"
+                alt="Toyota Corolla Cross preto em estrada ao entardecer"
                 loading="lazy"
+                data-i18n-attr="alt:fleet.comfortAlt"
               />
-              <h3>Business Van</h3>
-              <p>
-                Perfect for roadshows, family trips or executive groups on the go.
+              <h3 data-i18n="fleet.comfortTitle">Conforto em viagens longas</h3>
+              <p data-i18n="fleet.comfortDescription">
+                Bancos em couro, conectividade para trabalhar no caminho e porta-malas
+                generoso para bagagens.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--dark" aria-labelledby="testimonials-title">
+      <section class="section section--muted" aria-labelledby="testimonials-title">
         <div class="container">
           <header class="section__header">
-            <h2 id="testimonials-title">Trusted by leaders and VIP travellers</h2>
-            <p>
-              Hear what clients say about their journeys with a dedicated executive
-              driver.
+            <h2 id="testimonials-title" data-i18n="testimonials.title">
+              Confiado por líderes e viajantes VIP
+            </h2>
+            <p data-i18n="testimonials.subtitle">
+              Veja o que os clientes dizem sobre suas viagens com Wagner como motorista
+              dedicado.
             </p>
           </header>
           <div class="testimonials">
             <figure class="testimonial">
-              <blockquote>
-                “Always punctual and impeccably professional. Our board members feel
-                at ease knowing their transportation is handled.”
+              <blockquote data-i18n="testimonials.quoteOne">
+                “Wagner é sempre pontual e impecável. Nosso conselho fica tranquilo
+                sabendo que o transporte está garantido.”
               </blockquote>
-              <figcaption>— Sofia M., Corporate Travel Planner</figcaption>
+              <figcaption data-i18n="testimonials.authorOne">
+                — Sofia M., Coordenadora de Viagens Corporativas
+              </figcaption>
             </figure>
             <figure class="testimonial">
-              <blockquote>
-                “The ride experience reflects our brand: refined, reliable and
-                premium. Highly recommended for VIP guests.”
+              <blockquote data-i18n="testimonials.quoteTwo">
+                “A experiência reflete nossa marca: refinada, confiável e premium.
+                Ideal para hóspedes VIP.”
               </blockquote>
-              <figcaption>— Daniel K., Luxury Hotel Manager</figcaption>
+              <figcaption data-i18n="testimonials.authorTwo">
+                — Daniel K., Gerente de Hotel de Luxo
+              </figcaption>
             </figure>
           </div>
         </div>
@@ -232,67 +334,128 @@
       <section class="section" aria-labelledby="process-title">
         <div class="container">
           <header class="section__header">
-            <h2 id="process-title">How to secure your ride</h2>
-            <p>Booking your executive transfer is effortless and fast.</p>
+            <h2 id="process-title" data-i18n="process.title">Como garantir sua corrida</h2>
+            <p data-i18n="process.subtitle">
+              Reservar seu transfer executivo é simples e rápido.
+            </p>
           </header>
           <ol class="steps">
-            <li>
-              <h3>Share your itinerary</h3>
-              <p>Send your pick-up details, schedule and any special requests.</p>
+            <li class="step">
+              <span class="step__number">1</span>
+              <div class="step__content">
+                <h3 data-i18n="process.stepOneTitle">Envie seu itinerário</h3>
+                <p data-i18n="process.stepOneDescription">
+                  Informe detalhes de embarque, horários e pedidos especiais.
+                </p>
+              </div>
             </li>
-            <li>
-              <h3>Receive confirmation</h3>
-              <p>Get a tailored quote and confirmation with driver profile.</p>
+            <li class="step">
+              <span class="step__number">2</span>
+              <div class="step__content">
+                <h3 data-i18n="process.stepTwoTitle">Receba a confirmação</h3>
+                <p data-i18n="process.stepTwoDescription">
+                  Receba orçamento personalizado e confirmação com perfil do motorista.
+                </p>
+              </div>
             </li>
-            <li>
-              <h3>Travel in comfort</h3>
-              <p>
-                Your driver arrives early, assists with luggage and ensures a
-                smooth ride.
-              </p>
+            <li class="step">
+              <span class="step__number">3</span>
+              <div class="step__content">
+                <h3 data-i18n="process.stepThreeTitle">Viaje com conforto</h3>
+                <p data-i18n="process.stepThreeDescription">
+                  Wagner chega com antecedência, ajuda com bagagens e garante um trajeto
+                  tranquilo.
+                </p>
+              </div>
             </li>
           </ol>
         </div>
       </section>
 
-      <section class="cta" aria-labelledby="cta-title">
+      <section class="section cta" aria-labelledby="cta-title">
         <div class="container cta__content">
           <div>
-            <h2 id="cta-title">Ready to elevate your next ride?</h2>
-            <p>
-              Message me on WhatsApp to secure luxury transportation tailored to
-              your schedule.
+            <h2 id="cta-title" data-i18n="cta.title">Vamos planejar sua próxima viagem premium?</h2>
+            <p data-i18n="cta.subtitle">
+              Converse diretamente com Wagner e receba confirmação rápida pelo WhatsApp.
             </p>
           </div>
-          <button class="btn btn--light cta-whatsapp" type="button">
-            Chat on WhatsApp
+          <button
+            class="btn btn--primary btn--large btn--whatsapp cta-whatsapp"
+            type="button"
+            data-message-key="whatsapp.general"
+          >
+            <span class="btn__icon" aria-hidden="true">💬</span>
+            <span class="btn__label" data-i18n="cta.button">Enviar mensagem para Wagner</span>
           </button>
         </div>
       </section>
 
-      <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <section class="section" aria-labelledby="contact-title">
         <div class="container">
           <header class="section__header">
-            <h2 id="contact-title">Contact information</h2>
-            <p>Feel free to reach out for quotes, availability or special events.</p>
+            <h2 id="contact-title" data-i18n="contact.title">Informações de contato</h2>
+            <p data-i18n="contact.subtitle">
+              Fale para orçamentos, disponibilidade ou eventos especiais.
+            </p>
           </header>
-          <div class="contact-grid">
-            <div class="contact-item">
-              <h3>Phone</h3>
-              <a href="tel:+1234567890">+1 (234) 567-890</a>
-            </div>
-            <div class="contact-item">
-              <h3>Email</h3>
-              <a href="mailto:hello@executive-driver.com">hello@executive-driver.com</a>
-            </div>
-            <div class="contact-item">
-              <h3>Service area</h3>
-              <p>Greater metropolitan region and surrounding airports.</p>
-            </div>
-            <div class="contact-item">
-              <h3>Hours</h3>
-              <p>Available by reservation 24/7. Same-day rides upon request.</p>
-            </div>
+          <div class="contact-layout">
+            <dl class="contact-list">
+              <div class="contact-list__item">
+                <dt data-i18n="contact.phoneTitle">Telefone</dt>
+                <dd>
+                  <a
+                    class="contact-list__link"
+                    href="tel:+5511977377841"
+                    data-i18n="contact.phoneValue"
+                  >
+                    +55 (11) 97737-7841
+                  </a>
+                </dd>
+              </div>
+              <div class="contact-list__item">
+                <dt data-i18n="contact.emailTitle">E-mail</dt>
+                <dd>
+                  <a
+                    class="contact-list__link"
+                    href="mailto:wdstaxi@gmail.com"
+                    data-i18n="contact.emailValue"
+                  >
+                    wdstaxi@gmail.com
+                  </a>
+                </dd>
+              </div>
+              <div class="contact-list__item">
+                <dt data-i18n="contact.areaTitle">Área de atendimento</dt>
+                <dd data-i18n="contact.areaDescription">
+                  Transfers para Ubatuba, Paraty, Angra dos Reis, Rio de Janeiro e porto
+                  marítimo.
+                </dd>
+              </div>
+              <div class="contact-list__item">
+                <dt data-i18n="contact.hoursTitle">Horários</dt>
+                <dd data-i18n="contact.hoursDescription">
+                  Atendimento com agendamento 24 horas. Sujeito a confirmação para
+                  solicitações no mesmo dia.
+                </dd>
+              </div>
+            </dl>
+            <figure
+              class="contact-card"
+              data-i18n-attr="aria-label:contact.cardAria"
+              aria-label="Cartão de visita Wagner Transporte Executivo com informações de contato"
+            >
+              <img
+                src="assets/business-card.jpg"
+                alt="Cartão de visita Wagner Transporte Executivo com QR code"
+                loading="lazy"
+                data-i18n-attr="alt:contact.cardAlt"
+              />
+              <figcaption data-i18n="contact.cardCaption">
+                Cartão oficial Wagner Transporte Executivo com QR Code para agendamento
+                imediato.
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -300,11 +463,34 @@
 
     <footer class="footer">
       <div class="container footer__content">
-        <p>© <span id="copyright-year"></span> Executive Taxi Driver. All rights reserved.</p>
-        <a class="btn btn--ghost cta-whatsapp" href="#">WhatsApp booking</a>
+        <button
+          class="btn btn--primary btn--whatsapp footer__cta cta-whatsapp"
+          type="button"
+          data-message-key="whatsapp.general"
+        >
+          <span class="btn__icon" aria-hidden="true">💬</span>
+          <span class="btn__label" data-i18n="footer.cta">Reservar via WhatsApp</span>
+        </button>
       </div>
+        <p class="footer__legal">
+          <small>
+            © <span id="copyright-year"></span>
+            <span data-i18n="footer.legalSuffix">Wagner Transporte Executivo. Todos os direitos reservados.</span>
+          </small>
+        </p>
     </footer>
 
-    <script src="script.js"></script>
+    <a
+      class="floating-cta btn btn--whatsapp cta-whatsapp"
+      href="#whatsapp"
+      data-message-key="whatsapp.general"
+      data-i18n-attr="aria-label:floatingCta.ariaLabel"
+      aria-label="Falar com Wagner"
+    >
+      <span class="btn__icon" aria-hidden="true">💬</span>
+      <span class="btn__label" data-i18n="floatingCta.label">Falar com Wagner</span>
+    </a>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
